@@ -20,7 +20,7 @@ Akbank Derin Öğrenme Bootcamp'i için CNN ile architectural-heritage-elements 
 <br>
 
 <div align="center">
-  <strong><a href="[BURAYA_KAGGLE_NOTEBOOK_LINKINIZI_YAPIŞTIRIN]">» Kaggle Notebook'u Görüntüle «</a></strong>
+  <strong><a href="[https://www.kaggle.com/code/envercanbickin/akbank-derin-renme-bootcamp]">» Kaggle Notebook'u Görüntüle «</a></strong>
 </div>
 
 <br>
@@ -44,7 +44,6 @@ Akbank Derin Öğrenme Bootcamp'i için CNN ile architectural-heritage-elements 
 
 Bu proje, **Akbank Derin Öğrenme Bootcamp: Yeni Nesil Proje Kampı**'nın bir parçası olarak gerçekleştirilmiştir. Projenin temel amacı, verilen bir mimari yapı elemanının görselinden yola çıkarak bu elemanın hangi sınıfa (örneğin kubbe, sütun, kemer vb.) ait olduğunu tespit eden bir Evrişimli Sinir Ağı (CNN) modeli geliştirmektir.
 
-Proje kapsamında, modern bir derin öğrenme tekniği olan **Transfer Öğrenme (Transfer Learning)** kullanılarak, `MobileNetV2` mimarisinin gücünden faydalanılmıştır.
 
 ## Veri Seti
 
@@ -68,23 +67,17 @@ Proje, baştan sona Kaggle Notebooks ortamında geliştirilmiştir. Süreç boyu
 * Matplotlib & Seaborn
 
 **Metodoloji:**
-1.  **Veri Ön İşleme:** Görüntüler, `MobileNetV2` mimarisine uygun olarak `224x224` piksel boyutuna getirildi. Veri seti, `ImageDataGenerator` kullanılarak eğitim, doğrulama ve test setlerine ayrıldı.
+1.  **Veri Ön İşleme:** Görüntüler, `150x150` piksel boyutuna getirildi. Veri seti, `ImageDataGenerator` kullanılarak eğitim, doğrulama ve test setlerine ayrıldı.
 2.  **Veri Çoğaltma (Data Augmentation):** Modelin genelleme yeteneğini artırmak amacıyla eğitim verilerine rastgele döndürme, yakınlaştırma, kaydırma ve yatay çevirme gibi işlemler uygulandı.
-3.  **Transfer Öğrenme (Transfer Learning):** `MobileNetV2` modeli, `ImageNet` ağırlıklarıyla temel model olarak kullanıldı. Bu temel modelin katmanları dondurularak, üzerine projeye özel yeni bir sınıflandırma katmanı eklendi.
-4.  **Model Eğitimi:** Model, `Adam` optimizer ve düşük bir öğrenme oranı ile derlendi. Aşırı öğrenmeyi engellemek için `EarlyStopping` tekniği kullanıldı.
-5.  **Model Değerlendirme:** Modelin performansı; doğruluk/kayıp grafikleri, sınıflandırma raporu ve karmaşıklık matrisi gibi metriklerle analiz edildi.
-6.  **Yorumlanabilirlik (Interpretability):** Modelin bir tahminde bulunurken görüntünün hangi bölgelerine odaklandığını anlamak için **Eigen-CAM** ile ısı haritaları oluşturuldu.
+3.  **Model Eğitimi:** Model, `Adam` optimizer ve düşük bir öğrenme oranı ile derlendi. Aşırı öğrenmeyi engellemek için `EarlyStopping` tekniği kullanıldı.
+4.  **Model Değerlendirme:** Modelin performansı; doğruluk/kayıp grafikleri, sınıflandırma raporu ve karmaşıklık matrisi gibi metriklerle analiz edildi.
+5.  **Yorumlanabilirlik (Interpretability):** Modelin bir tahminde bulunurken görüntünün hangi bölgelerine odaklandığını anlamak için **Eigen-CAM** ile ısı haritaları oluşturuldu.
 
 ## Elde Edilen Sonuçlar
 
-Transfer öğrenme yaklaşımı sayesinde, model test seti üzerinde **~%94** gibi yüksek bir doğruluk oranına ulaşmıştır. Bu sonuç, modelin mimari elemanları başarılı bir şekilde ayırt edebildiğini göstermektedir.
+Transfer öğrenme yaklaşımı sayesinde, model test seti üzerinde **~%75** gibi bir doğruluk oranına ulaşmıştır.
 
 Eigen-CAM ile yapılan analizler, modelin doğru sınıflandırma yaparken ilgili mimari öğenin kendisine odaklandığını görsel olarak kanıtlamaktadır.
-
-| Orijinal Görüntü | Eigen-CAM Isı Haritası |
-| :---: | :---: |
-| ![Örnek Görüntü 1]([ÖRNEK_GÖRÜNTÜ_1_LİNKİNİ_BURAYA_YAPIŞTIRIN]) | ![Örnek Isı Haritası 1]([ÖRNEK_ISI_HARİTASI_1_LİNKİNİ_BURAYA_YAPIŞTIRIN]) |
-| *Örnek Sınıf: Dome (Kubbe)* | *Modelin kubbe yapısına odaklandığı görülüyor.* |
 
 <br>
 
@@ -92,17 +85,14 @@ Eigen-CAM ile yapılan analizler, modelin doğru sınıflandırma yaparken ilgil
 
 Bu projenin tamamı bir Kaggle Notebook'u üzerinde çalışmaktadır. Modeli çalıştırmak veya sonuçları yeniden üretmek için aşağıdaki adımları izleyebilirsiniz:
 
-1.  Yukarıda verilen **[Kaggle Notebook linkine]([BURAYA_KAGGLE_NOTEBOOK_LINKINIZI_YAPIŞTIRIN])** gidin.
+1.  Yukarıda verilen **[Kaggle Notebook linkine]([https://www.kaggle.com/code/envercanbickin/akbank-derin-renme-bootcamp])** gidin.
 2.  Notebook'u kendi Kaggle hesabınıza kopyalamak için sağ üstteki "Copy and Edit" butonuna tıklayın.
 3.  Eğitim sürecini hızlandırmak için sağdaki menüden "Settings > Accelerator > GPU" seçeneğini aktif ettiğinizden emin olun.
 4.  "Run All" komutu ile tüm hücreleri çalıştırarak projenin baştan sona çalışmasını izleyebilirsiniz.
 
-## Lisans
-
-Bu proje, MIT Lisansı altında lisanslanmıştır.
 
 ## İletişim
 
-**[Adınız Soyadınız]** - [GitHub Profil Linkiniz]
+**[Enver Can Biçkin]** - [https://www.linkedin.com/in/envercanbickin/]
 
-Proje Linki: [https://github.com/kullanici-adiniz/proje-adi](https://github.com/kullanici-adiniz/proje-adi)
+
