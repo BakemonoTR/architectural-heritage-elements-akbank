@@ -21,6 +21,7 @@ Akbank Derin Öğrenme Bootcamp'i için CNN ile architectural-heritage-elements 
 
 <div align="center">
   <strong><a href="[https://www.kaggle.com/code/envercanbickin/akbank-derin-renme-bootcamp]">» Kaggle Notebook'u Görüntüle «</a></strong>
+  https://www.kaggle.com/code/envercanbickin/akbank-derin-renme-bootcamp
 </div>
 
 <br>
