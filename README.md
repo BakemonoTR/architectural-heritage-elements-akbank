@@ -78,6 +78,8 @@ Proje, baştan sona Kaggle Notebooks ortamında geliştirilmiştir. Süreç boyu
 
 Transfer öğrenme yaklaşımı sayesinde, model test seti üzerinde **~%75** gibi bir doğruluk oranına ulaşmıştır.
 
+Veri setinizde overfitting sorunu var çünkü model eğitim sırasında %85 accuracy'ye ulaşıyor ama test setinde %75'e düşüyor, bu %10'luk fark modelin eğitim verisini ezberlediğini gösteriyor. Grafiklerde de 15. epoch'tan sonra training accuracy artmaya devam ederken validation accuracy sabit kalıyor hatta validation loss artmaya başlıyor, bu klasik overfitting belirtisi.
+
 Eigen-CAM ile yapılan analizler, modelin doğru sınıflandırma yaparken ilgili mimari öğenin kendisine odaklandığını görsel olarak kanıtlamaktadır.
 
 <br>
