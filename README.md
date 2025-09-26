@@ -64,7 +64,6 @@ Proje, baştan sona Kaggle Notebooks ortamında geliştirilmiştir. Süreç boyu
 * TensorFlow & Keras
 * Scikit-learn
 * NumPy
-* Pandas
 * Matplotlib & Seaborn
 
 **Metodoloji:**
