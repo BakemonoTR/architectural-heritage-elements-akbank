@@ -50,7 +50,7 @@ Bu proje, **Akbank Derin Öğrenme Bootcamp: Yeni Nesil Proje Kampı**'nın bir 
 
 Projede, Kaggle üzerinde halka açık olarak yayınlanan **"Architectural Heritage Elements"** veri seti kullanılmıştır.
 
-* **Veri Seti Linki:** [https://www.kaggle.com/datasets/ikobzev/architectural-heritage-elements-image64-dataset]([https://www.kaggle.com/datasets/xhlulu/archi-heritage-elements](https://www.kaggle.com/datasets/ikobzev/architectural-heritage-elements-image64-dataset))
+* **Veri Seti Linki:** https://www.kaggle.com/datasets/ikobzev/architectural-heritage-elements-image64-dataset
 * **İçerik:** Veri seti, 10 farklı mimari eleman sınıfından oluşmaktadır.
 * **Boyut:** Toplamda yaklaşık 15,000 adet renkli görsel içermektedir.
 * **Sınıflar:** `Altar`, `Apse`, `Bell Tower`, `Column`, `Dome`, `Gargoyle`, `Stained Glass`, `Vault`, `Flying Buttress`, `Tympanum`.
